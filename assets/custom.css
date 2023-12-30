@@ -1,0 +1,187 @@
+/*------------------- Slideshow Css Start-------------------*/
+.slideshow_controls .slideshow_autoplay,
+.slideshow__controls .slider-counter {
+  display: none;
+}
+slideshow-component .banner:after,
+slideshow-component .banner__media:after {
+  z-index: -1;
+}
+.slideshow .banner__content,
+slideshow-component .slideshow.banner{
+  z-index: 0 !important;
+}
+.slideshow .slideshow__controls button.slider-button {
+  z-index: 3;
+}
+slideshow-component .slider-counter,
+.slideshow__autoplay.slider-button {
+  display: none;
+  z-index: 3;
+}
+.slideshow__controls .slider-button--prev:hover,
+.slideshow__controls .slider-button--next:hover {
+  background-color: #000000;
+}
+slideshow-component .slideshow__controls {
+  position: unset;
+}
+.slideshow__controls .slider-button--prev,
+.slideshow__controls .slider-button--next {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 3;
+  background-color:#978888;
+  border-radius: 30px;
+}
+.slideshow__controls .slider-button--prev {
+  left: 1px;
+}
+.slideshow__controls .slider-button--next {
+  right: 1px;
+}
+/* .slideshow__text-wrapper {
+  display: none !important;
+} */
+slideshow-component .slider-button--prev .icon,
+slideshow-component .slider-button--next .icon {
+  width: 25px;
+  height: 25px;
+  color: var(--gradient-background);
+}
+.slider-mobile-gutter {
+  position: relative;
+}
+.collection .slider-button--next, .collection .slider-button--prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: #9f8475;
+    z-index: 9999999;
+    border-radius: 30px;
+}
+.collection .slider-button--next {
+  right: -21px;
+}
+.collection .slider-button--prev {
+    left: 22px;
+}
+.collection .slider-button--next svg, .collection .slider-button--prev svg {
+    height: 25px;
+    width: 25px;
+    color: var(--gradient-background);
+}
+
+.collection .slider-counter {
+  
+display:none;
+}
+/*------------------- Slideshow Css End-------------------*/
+
+
+
+
+/* Custom Code For Remove header and footer Underline */
+
+.header__inline-menu a {
+    text-decoration: none !important;
+}
+.header__active-menu-item {
+    text-decoration: none !important;
+}
+.header__menu-item span {
+  text-decoration: none !important;
+}
+
+.header__menu-item:hover span {
+text-decoration: none;
+}
+
+details[open]>.header__menu-item {
+text-decoration: none;
+}
+.footer-block__details-content .list-menu__item--link:hover, .copyright__content a:hover{
+text-decoration: none !important;
+}
+
+/* Remove The Underline Under The Product Title  */
+
+.underline-links-hover:hover a {text-decoration: none !important;}
+
+/*================== Header Css End ==================*/
+
+/*==================== Collection List Css Start ====================*/
+.collection-list-wrapper .title-wrapper-with-link {
+  align-items: center;
+}
+.product-card-wrapper.underline-links-hover:hover a,
+.header__submenu .header__menu-item:hover {
+  text-decoration: none !important;
+}
+/* .section-collection-list {
+  position: relative;
+}
+.section-collection-list:before {
+  content: "";
+  position: absolute;
+  background-color: #6e7b6e59;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+} */
+/*==================== Collection List Css End ====================*/
+
+
+
+/* custom different banner image for desktop & mobile */
+
+.banner__media:first-child {
+    width: 100%;
+}
+.banner__media+.banner__media {
+    display: none;
+}
+@media screen and (max-width: 749px) {
+    .banner__media:first-child {
+        display: none;
+    }
+    .banner__media+.banner__media {
+        width: 100%;
+        display: block !important;
+    }
+}
+@media screen and (max-width: 749px) {
+    .banner__content::before{
+        padding-bottom: 150% !important;
+    }
+}
+
+
+/* Header 'Home' Icon */
+.list-menu li:nth-child(1) .header__menu-item span:before {
+    content: "";
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    left: -25px;
+    background-image: url(
+    https://cdn.shopify.com/s/files/1/0727/5177/6044/files/pngwing.com_3.png?v=1696750357);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    opacity: 1;
+    background-size: contain;
+    margin-right: 8px;
+}
+.header__menu-item span {
+position: relative;
+}
+
+/*faq*/
+h3.accordion__title.h4 {
+    text-decoration: none!important;
+    font-size: 16px;
+    font-weight: bold;
+}
